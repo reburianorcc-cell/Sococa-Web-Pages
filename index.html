@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SOCOCA map information cloud service">
+  <title>SOCOCA | Map Information Cloud Service</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="SOCOCA home">
+      <img class="brand-logo" src="assets/sococa-logo.png" alt="SOCOCA">
+      <span class="brand-description">Map Information Cloud Service for Every Industry</span>
+    </a>
+
+    <a class="header-contact" href="https://docs.google.com/forms/d/e/1FAIpQLSev9WoFS2MrXiyflOqt8g9FHmuVe-mzM6c-OMDtD3aPRYwuxg/viewform">
+      <span aria-hidden="true">✉</span>
+      Contact Us / Request Information
+    </a>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Smarter fieldwork starts here</p>
+          <h1 id="hero-title">Map information easily on site.<br>Share information in real time!</h1>
+          <p class="hero-description">
+            <strong>SOCOCA</strong> helps reduce the time spent entering and organizing
+            field survey data and visit information.
+          </p>
+
+          <div class="uses" aria-label="SOCOCA use cases">
+            <span>Field Survey</span>
+            <span>Sales Visit</span>
+            <span>Facility Inspection</span>
+            <b>and more</b>
+          </div>
+
+          <p class="uses-caption">Used in various businesses and situations.</p>
+
+          <a class="primary-button" href="#contact">
+            <span aria-hidden="true">✉</span>
+            Click here to contact us and request information
+            <span class="button-arrow" aria-hidden="true">›</span>
+          </a>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <img class="city-map-image" src="assets/sococa-city-map.png" alt="">
+          <svg viewBox="0 0 640 470" role="img">
+            <defs>
+              <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#eaf6f8"/>
+                <stop offset="1" stop-color="#b9dce4"/>
+              </linearGradient>
+              <linearGradient id="building" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#fff"/>
+                <stop offset="1" stop-color="#bdd7df"/>
+              </linearGradient>
+              <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+                <feDropShadow dx="0" dy="15" stdDeviation="12" flood-color="#004b82" flood-opacity=".35"/>
+              </filter>
+            </defs>
+
+            <g filter="url(#shadow)" transform="translate(76 45)">
+              <path fill="url(#ground)" d="M37 236 265 93l270 148-243 154L37 236Z"/>
+              <path fill="#86c5d2" d="m37 236 255 159v23L37 258v-22Z"/>
+              <path fill="#65aebe" d="m292 395 243-154v22L292 418v-23Z"/>
+
+              <g stroke="#86aebb" stroke-width="4">
+                <path d="m100 246 190 116M195 182l188 119M297 124l178 105"/>
+                <path d="m173 315 239-150M242 363l239-151M104 268l240-148"/>
+              </g>
+
+              <g fill="url(#building)" stroke="#89acb8" stroke-width="3">
+                <path d="m352 75 43-24 40 22v151l-43 26-40-23V75Z"/>
+                <path d="m416 44 36-20 35 19v155l-36 21-35-20V44Z"/>
+                <path d="m267 151 44-25 42 24v118l-44 27-42-25V151Z"/>
+                <path d="m171 214 38-22 37 21v89l-38 23-37-22v-89Z"/>
+                <path d="m375 248 49-28 48 27v54l-49 30-48-29v-54Z"/>
+                <path d="m91 251 45-26 43 25v58l-44 27-44-27v-57Z"/>
+              </g>
+
+              <g fill="#0a8bc4">
+                <path d="M365 93h17v18h-17zm0 31h17v18h-17zm0 31h17v18h-17zm0 31h17v18h-17z"/>
+                <path d="M427 61h14v16h-14zm0 29h14v16h-14zm0 29h14v16h-14zm0 29h14v16h-14z"/>
+                <path d="M288 169h17v16h-17zm0 29h17v16h-17zm0 29h17v16h-17z"/>
+              </g>
+
+              <g fill="#52ad61">
+                <circle cx="142" cy="209" r="21"/><circle cx="250" cy="289" r="19"/>
+                <circle cx="347" cy="323" r="23"/><circle cx="479" cy="212" r="20"/>
+              </g>
+
+              <g fill="#ff3853" stroke="#fff" stroke-width="6">
+                <path d="M324 85c-23 0-41 18-41 41 0 32 41 66 41 66s41-34 41-66c0-23-18-41-41-41Zm0 57a17 17 0 1 1 0-34 17 17 0 0 1 0 34Z"/>
+                <path d="M485 148c-18 0-32 14-32 32 0 25 32 52 32 52s32-27 32-52c0-18-14-32-32-32Zm0 44a13 13 0 1 1 0-26 13 13 0 0 1 0 26Z"/>
+              </g>
+            </g>
+
+            <g transform="translate(4 265) rotate(-5)">
+              <rect x="0" y="0" width="112" height="183" rx="15" fill="#183f55"/>
+              <rect x="9" y="15" width="94" height="143" rx="5" fill="#f7fbfc"/>
+              <path d="m56 51-25 15v40l25 16 26-16V66L56 51Z" fill="#d4e9ee"/>
+              <path d="M57 68c-11 0-19 9-19 19 0 15 19 30 19 30s19-15 19-30c0-10-9-19-19-19Zm0 27a8 8 0 1 1 0-16 8 8 0 0 1 0 16Z" fill="#ff586d"/>
+              <circle cx="56" cy="171" r="7" fill="#96b5bf"/>
+            </g>
+          </svg>
+      </div>
+    </section>
+    <section class="introduction" aria-labelledby="intro-title">
+      <div class="introduction-inner">
+        
+
+          
+
+        <h2 id="intro-title" class="video-heading">
+          <span class="video-icon" aria-hidden="true">▶</span>
+          “SOCOCA,” a cloud service for viewing map information via video.
+        </h2>
+
+        <a class="subsidy-cta" href="https://www.rands-co.com/rands_form/toroku/form_sococa.html" target="_blank" rel="noopener noreferrer">
+          <img src="assets/sococa-logo.png" alt="SOCOCA">
+          <span>Introduce SOCOCA smartly and affordably!</span>
+        </a>
+
+        <div class="youtube-video">
+          <iframe
+            src="https://www.youtube.com/embed/CdHcZVD65i4"
+            title="SOCOCA Service Introduction Video"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="business-situations" aria-labelledby="situations-title">
+      <div class="situations-intro">
+        <h2 id="situations-title">Available for various business situations using maps</h2>
+
+        <div class="situation-tabs" role="tablist" aria-label="Business situations">
+          <button class="situation-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="equipment-panel" id="equipment-tab" data-panel="equipment-panel">
+            Equipment Inspection
+          </button>
+          <button class="situation-tab" type="button" role="tab" aria-selected="false" aria-controls="sales-panel" id="sales-tab" data-panel="sales-panel">
+            Sales Visit
+          </button>
+          <button class="situation-tab" type="button" role="tab" aria-selected="false" aria-controls="survey-panel" id="survey-tab" data-panel="survey-panel">
+            Field Survey
+          </button>
+        </div>
+      </div>
+
+      <div class="situation-panels">
+        <article class="situation-panel is-active" id="equipment-panel" role="tabpanel" aria-labelledby="equipment-tab">
+          <div class="situation-heading">
+            <h3>In equipment inspection and maintenance work, are you facing any of these challenges?</h3>
+            <img src="assets/equipment-inspection.png" alt="Personnel experiencing equipment inspection challenges">
+          </div>
+          <div class="challenge-grid">
+            <p>Need to review previous inspection data in the field.</p>
+            <p>Want to export reports automatically.</p>
+            <p>Want to easily register the photos and information recorded.</p>
+            <p>Need to digitize facility information and ledgers as they are printed and carried.</p>
+            <p>Need to avoid errors by posting inspection results</p>
+          </div>
+        </article>
+
+        <article class="situation-panel" id="sales-panel" role="tabpanel" aria-labelledby="sales-tab" hidden>
+          <div class="situation-heading">
+            <h3>Are you facing any of these challenges with sales visits or customer information management?</h3>
+            <img src="assets/sales-visit.png" alt="Sales personnel experiencing customer management challenges">
+          </div>
+          <div class="challenge-grid">
+            <p>I want to share the progress of the project in real time.</p>
+            <p>We want to properly manage the information of each salesperson responsible for many clients.</p>
+            <p>I want to improve efficiency by making additional sales to customers near the place I am visiting.</p>
+            <p>I want to reduce the time spent entering customer information and daily reports after returning to the office.</p>
+            <p>We want to implement a customer management system that is easy for our field sales staff to use.</p>
+          </div>
+        </article>
+
+        <article class="situation-panel" id="survey-panel" role="tabpanel" aria-labelledby="survey-tab" hidden>
+          <div class="situation-heading">
+            <h3>Are you facing any of these challenges when conducting on-site surveys of facilities and buildings?</h3>
+            <img src="assets/field-survey.png" alt="Personnel experiencing field survey challenges">
+          </div>
+          <div class="challenge-grid">
+            <p>I want to easily register the photos and information I have taken.</p>
+            <p>I would like to check past survey data on-site.</p>
+            <p>I currently print property information and maps and bring them with me, so I would like to digitize them.</p>
+            <p>I want to automate the generation of reports.</p>
+            <p>I want to efficiently manage my patrols using the map I normally use on my smartphone.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="solutions" aria-labelledby="solutions-title">
+      <div class="solutions-inner">
+        <div class="solutions-heading">
+          <h2 id="solutions-title">All these Problems can be solved by using <strong>SOCOCA!</strong></h2>
+        </div>
+
+        <div class="solution-grid">
+          <article class="solution-card">
+            <div>
+              <h3>Real-Time Information Sharing and Management</h3>
+              <p>Share and manage information about customers, facilities, and buildings in real time together with their map locations.</p>
+            </div>
+          </article>
+
+          <article class="solution-card">
+            <div>
+              <h3>Data Input and Confirmation from Any Location</h3>
+              <p>Confirm information while travelling or working in the field, and add text or photographic data immediately.</p>
+            </div>
+          </article>
+
+          <article class="solution-card">
+            <div>
+              <h3>Register Photos as Soon as They Are Taken</h3>
+              <p>Register photos directly with the facility or building information displayed on the map.</p>
+            </div>
+          </article>
+
+          <article class="solution-card">
+            <div>
+              <h3>Data Input Items Can Be Freely Customized</h3>
+              <p>Edit data-entry items freely for flexible information management by service, team, or department.</p>
+            </div>
+          </article>
+
+          <article class="solution-card">
+            <div>
+              <h3>Used in a Wide Range of Operations and Scenarios</h3>
+              <p>Use SOCOCA for maintenance inspections, sales management, market research, marketing, and many other field operations.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-sococa" aria-labelledby="about-title">
+      <div class="about-inner">
+        <div class="about-introduction">
+          <div class="about-copy">
+            <p class="about-kicker">Mapping information made simple</p>
+            <h2 id="about-title">What is SOCOCA?</h2>
+            <p><strong>SOCOCA</strong> is a mapping information cloud service that allows real-time data sharing through a smartphone application.</p>
+            <p>It seamlessly fits all industries, providing efficient mapping solutions tailored to your needs.</p>
+          </div>
+
+          <div class="about-devices">
+            <img
+              class="about-device-image"
+              src="assets/sococa-device-map1.png"
+              alt="SOCOCA map displayed on a desktop computer and smartphone"
+            >
+          </div>
+        </div>
+
+        <div class="benefits-panel">
+          <p class="benefits-label">Benefits of Implementation</p>
+          <ul>
+            <li>Sales activities can be streamlined, leading to increased sales through improved actions.</li>
+            <li>After returning to the office, there is no need to enter information or prepare documents, dramatically improving efficiency.</li>
+            <li>Customer information can be archived, ensuring a smooth transition and enhanced service.</li>
+            <li>Even individuals with limited IT skills can easily register text and photos, significantly reducing task time.</li>
+            <li>Registration items can be customized according to products and services at no additional cost.</li>
+          </ul>
+        </div>
+
+        <div class="about-actions">
+          <a class="about-action contact-action" href="https://docs.google.com/forms/d/e/1FAIpQLSev9WoFS2MrXiyflOqt8g9FHmuVe-mzM6c-OMDtD3aPRYwuxg/viewform
+"><span aria-hidden="true">✉</span> Contact Us</a>
+          <a class="about-action download-action" href="https://docs.google.com/forms/d/e/1FAIpQLSeoqc7a4kUpdUnyFCt6YYdMav4FfPO9Px6lLp0kDTIRZjZTbg/viewform
+"><span aria-hidden="true">⇩</span> Document Download</a>
+          <a class="about-action trial-action" href="https://docs.google.com/forms/d/e/1FAIpQLSe32Ztoptt9rneo2t2CeiK-RsnEmvLPo2jDYEnwGKAY-8Zv2Q/viewform
+"><span aria-hidden="true">✉</span> Apply for Free Trial</a>
+        </div>
+
+        <div class="about-notices">
+          <article>
+            <h3>Now Recruiting Sales Agents!</h3>
+            <p>For more information, please contact us by phone or through the email form.</p>
+          </article>
+          <article>
+            <h3>Free Trial Available Now!</h3>
+            <p>Try SOCOCA free of charge with our free trial. Please do not hesitate to contact us.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="usage-scenarios" aria-labelledby="usage-title">
+      <div class="usage-background" aria-hidden="true">
+        <span class="usage-route route-one"></span>
+        <span class="usage-route route-two"></span>
+        <span class="usage-pin usage-pin-one">●</span>
+        <span class="usage-pin usage-pin-two">●</span>
+      </div>
+
+      <div class="usage-inner">
+        <h2 id="usage-title">Usage Scenarios</h2>
+        <img class="usage-guide" src="assets/usage-guide.png" alt="SOCOCA guide pointing to the available usage scenarios">
+
+        <div class="usage-grid">
+          <article><h3>Parking Facilities</h3></article>
+          <article><h3>Vending Machines</h3></article>
+          <article><h3>Communication Base Stations</h3></article>
+          <article><h3>Security Facilities</h3></article>
+          <article><h3>Apartments and Building Security</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="customer-feedback" aria-labelledby="feedback-title">
+      <div class="feedback-inner">
+        <div class="feedback-heading">
+          <p>Real experiences from SOCOCA users</p>
+          <h2 id="feedback-title">Customer Feedback</h2>
+          <img src="assets/customer-feedback-heading.png" alt="Two SOCOCA representatives">
+        </div>
+
+        <div class="feedback-grid">
+          <article class="feedback-card">
+            <img class="feedback-photo" src="assets/customer-neos.png" alt="NEOS Corporation representatives">
+            <div class="feedback-card-body">
+              <p class="feedback-type">Equipment and field operations</p>
+              <h3>NEOS Corporation</h3>
+              <span class="feedback-line" aria-hidden="true"></span>
+              <p>SOCOCA centralizes field information, photos, locations, and work history, helping teams share accurate information and improve operational efficiency.</p>
+              <button class="feedback-details-button" type="button" data-feedback="neos">View Details <span aria-hidden="true">››</span></button>
+            </div>
+          </article>
+
+          <article class="feedback-card">
+            <img class="feedback-photo" src="assets/customer-kyushu.png" alt="Kyushu Electric Power Transmission and Distribution representative">
+            <div class="feedback-card-body">
+              <p class="feedback-type">Infrastructure management</p>
+              <h3>Kyushu Electric Power Transmission and Distribution Co., Inc.</h3>
+              <span class="feedback-line" aria-hidden="true"></span>
+              <p>SOCOCA makes it easier to organize site information, confirm previous records, and communicate updates between field personnel and office teams.</p>
+              <button class="feedback-details-button" type="button" data-feedback="kyushu">View Details <span aria-hidden="true">››</span></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="use-cases" aria-labelledby="use-cases-title">
+      <div class="use-cases-inner">
+        <div class="use-cases-heading">
+          <p>SOCOCA in daily operations</p>
+          <h2 id="use-cases-title">Use Cases</h2>
+        </div>
+
+        <article class="use-case-card">
+          <h3>Disaster Risk Reduction and Infrastructure Management</h3>
+          <div class="use-case-layout">
+            <div class="use-case-overview">
+              <p>SOCOCA enables field teams to share real-time reports, photos, locations, damage details, and repair progress, helping organizations coordinate emergency responses and manage infrastructure efficiently.</p>
+              <div class="use-case-visual tower-visual">
+                <img src="assets/use-case-base-station.png" alt="Base station information connected to a field worker's mobile device">
+              </div>
+            </div>
+
+            <div class="implementation-comparison">
+              <div class="implementation-block before-block">
+                <h4>Before Implementation</h4>
+                <ul>
+                  <li>Hazard, incident, evacuation, and infrastructure records are stored in separate files.</li>
+                  <li>Field reports, inspection photos, and location information are difficult to share</li>
+                  <li>Delayed updates can affect coordination and decision-making.</li>
+                </ul>
+              </div>
+              <span class="implementation-arrow" aria-hidden="true">▼</span>
+              <div class="implementation-block after-block">
+                <h4>After Implementation</h4>
+                <ul>
+                  <li>All disaster-risk and infrastructure information is centralized on one map.</li>
+                  <li>Field teams can register locations, reports, photos, and damage details in real time.</li>
+                  <li>Historical inspection and maintenance records are easier to access.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="use-case-card">
+          <h3>Parking Facility Management</h3>
+          <div class="use-case-layout">
+            <div class="use-case-overview">
+              <p>Connect parking-facility information, site photos, maintenance history, and staff updates so current conditions can be confirmed anywhere.</p>
+              <div class="use-case-visual parking-visual">
+                <img src="assets/use-case-parking1.png" alt="Smartphone sharing parking facility information with a map and office staff">
+              </div>
+            </div>
+
+            <div class="implementation-comparison">
+              <div class="implementation-block before-block">
+                <h4>Before Implementation</h4>
+                <ul>
+                  <li>Facility information was distributed across paper records, spreadsheets, and individual devices.</li>
+                  <li>Confirming maintenance history and sharing current site conditions took too much time.</li>
+                </ul>
+              </div>
+              <span class="implementation-arrow" aria-hidden="true">▼</span>
+              <div class="implementation-block after-block">
+                <h4>After Implementation</h4>
+                <ul>
+                  <li>Facility data, photos, and work history are managed together by location.</li>
+                  <li>Field and office teams share accurate information, improving response speed and efficiency.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="why-sococa" aria-labelledby="why-sococa-title">
+      <div class="why-sococa-inner">
+        <div class="why-sococa-heading">
+          <p>Built for reliable field operations</p>
+          <h2 id="why-sococa-title">Why Choose SOCOCA?</h2>
+        </div>
+
+        <div class="reason-list">
+          <article class="reason-card">
+            <div class="reason-number"><span>Reason</span><strong>01</strong></div>
+            <div class="reason-content">
+              <h3>Smooth Map Operations!</h3>
+              <p>Effortlessly handle large volumes of data without any stress.</p>
+              <p>Seamlessly manage approximately 50,000 data items on a PC, smartphone, or tablet.</p>
+            </div>
+          </article>
+
+          <article class="reason-card">
+            <div class="reason-number"><span>Reason</span><strong>02</strong></div>
+            <div class="reason-content">
+              <h3>Supports iOS and Android—No Need for New Devices!</h3>
+              <p>The service works on your existing smartphone or tablet and supports both operating systems.</p>
+              <p>Use your familiar device with ease while reducing implementation costs.</p>
+            </div>
+          </article>
+
+          <article class="reason-card">
+            <div class="reason-number"><span>Reason</span><strong>03</strong></div>
+            <div class="reason-content">
+              <h3>Input Items Can Be Customized to Match Daily Operations!</h3>
+              <p>The system is user-friendly, allowing displayed items to be renamed using terms commonly used in your company.</p>
+              <p>Start with only the essential input items, then add or modify them as needed to match your workflow and operational requirements.</p>
+            </div>
+          </article>
+
+          <article class="reason-card">
+            <div class="reason-number"><span>Reason</span><strong>04</strong></div>
+            <div class="reason-content">
+              <h3>Comfortable Operation with Google Maps!</h3>
+              <p>SOCOCA is built on Google Maps, providing a familiar and stress-free experience on smartphones, PCs, and tablets.</p>
+              <p class="reason-note">Residential maps from ZENRIN CO., LTD. can also be supported as an option.</p>
+            </div>
+          </article>
+
+          <article class="reason-card reason-card-featured">
+            <div class="reason-number"><span>Reason</span><strong>05</strong></div>
+            <div class="reason-content">
+              <h3>Customization to Fit Your Business Needs!</h3>
+              <p>Our system offers a variety of customization options to suit your specific requirements.</p>
+              <p class="reason-note">Customization is available for an additional charge.</p>
+              <div class="customization-examples">
+                <strong>Examples of customization</strong>
+                <ul>
+                  <li>Integration with core and internal systems</li>
+                  <li>Support for custom reports</li>
+                  <li>AI integration, including photo diagnostics and predictive analytics</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="getting-started" aria-labelledby="getting-started-title">
+      <div class="getting-started-inner">
+        <header class="getting-started-heading">
+          <p>Simple implementation process</p>
+          <h2 id="getting-started-title">Steps to Get Started</h2>
+        </header>
+
+        <article class="process-card">
+          <h3>Steps to Proposal</h3>
+          <div class="process-image-frame">
+            <img src="assets/steps-proposal.png" alt="Process from inquiry through document submission, proposal demonstration, and quotation submission">
+          </div>
+          <ol class="process-mobile-list" aria-label="Steps to proposal">
+            <li><span class="process-step-icon" aria-hidden="true">✉</span><div><strong>Inquiry</strong><small>Contact us about your requirements.</small></div></li>
+            <li><span class="process-step-icon" aria-hidden="true">▤</span><div><strong>Send SOCOCA Documents</strong><small>Within 1–2 business days</small></div></li>
+            <li><span class="process-step-icon" aria-hidden="true">▣</span><div><strong>Proposal Demonstration</strong><small>Within 1–2 business days</small></div></li>
+            <li><span class="process-step-icon" aria-hidden="true">✓</span><div><strong>Quotation Submission</strong><small>Within 1–2 business days</small></div></li>
+          </ol>
+        </article>
+
+        <article class="process-card">
+          <h3>Steps from Order to Use</h3>
+          <div class="process-image-frame process-order-frame">
+            <img src="assets/steps-order.png" alt="Process from order receipt through license issuance and master data setup">
+          </div>
+          <ol class="process-mobile-list" aria-label="Steps from order to use">
+            <li><span class="process-step-icon" aria-hidden="true">◆</span><div><strong>Order Receipt</strong><small>We confirm your order and requirements.</small></div></li>
+            <li><span class="process-step-icon" aria-hidden="true">☷</span><div><strong>License Issuance</strong><small>Within 1–2 business days</small></div></li>
+            <li><span class="process-step-icon" aria-hidden="true">▣</span><div><strong>Master Data Setup</strong><small>Input items and existing information registration · 1–2 business days</small></div></li>
+          </ol>
+        </article>
+
+        <div class="license-notice">
+          <strong>License Issuance within 5 Business Days of Order!</strong>
+          <small>* Please note that the estimated number of business days may vary slightly depending on the timing.</small>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <div class="contact-inner">
+        <h2 id="contact-title"><span aria-hidden="true">＼</span> Feel Free to Contact Us <span aria-hidden="true">／</span></h2>
+
+        <div class="contact-actions">
+          <a class="contact-action contact-action-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSev9WoFS2MrXiyflOqt8g9FHmuVe-mzM6c-OMDtD3aPRYwuxg/viewform" target="_blank" rel="noopener noreferrer">
+            <span aria-hidden="true">✉</span>
+            Contact Us
+          </a>
+          <a class="contact-action contact-action-dark" href="https://docs.google.com/forms/d/e/1FAIpQLSeoqc7a4kUpdUnyFCt6YYdMav4FfPO9Px6lLp0kDTIRZjZTbg/viewform">
+            <span aria-hidden="true">⬇</span>
+            Document Download
+          </a>
+          <a class="contact-action contact-action-blue" href="https://docs.google.com/forms/d/e/1FAIpQLSe32Ztoptt9rneo2t2CeiK-RsnEmvLPo2jDYEnwGKAY-8Zv2Q/viewform">
+            <span aria-hidden="true">✉</span>
+            Apply for Free Trial
+          </a>
+        </div>
+
+        <div class="contact-notices">
+          <article>
+            <h3>Now Recruiting Sales Agents!</h3>
+            <p>For more information, please contact us by phone or email form.</p>
+          </article>
+          <article>
+            <h3>Free Trial Available Now!</h3>
+            <p>Try SOCOCA free of charge with our Free Trial. Please do not hesitate to contact us.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="https://www.rands-co.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+      <a href="https://www.rands-co.com/" target="_blank" rel="noopener noreferrer">Management Company</a>
+      <a href="https://www.rands-co.com/rands_form/toroku/form_contact1_sub.html" target="_blank" rel="noopener noreferrer">Contact Us</a>
+    </nav>
+    <p>Copyright © 2026 Ltd. All rights reserved.</p>
+  </footer>
+
+  <button class="scroll-top-button" id="scroll-top-button" type="button" aria-label="Scroll back to the top">
+    <span aria-hidden="true">↑</span>
+  </button>
+
+  <div class="feedback-modal" id="feedback-modal" aria-hidden="true">
+    <div class="feedback-modal-backdrop" data-modal-close></div>
+    <section class="feedback-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="feedback-modal-title">
+      <button class="feedback-modal-close" type="button" data-modal-close aria-label="Close customer feedback">×</button>
+      <header class="feedback-modal-header">
+        <img id="feedback-modal-image" src="" alt="">
+        <div>
+          <p id="feedback-modal-label">Customer Story</p>
+          <h2 id="feedback-modal-title"></h2>
+          <p id="feedback-modal-summary"></p>
+        </div>
+      </header>
+      <div class="feedback-modal-content" id="feedback-modal-content"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
